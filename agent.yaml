@@ -1,0 +1,12 @@
+spec_version: "0.1.0"
+name: code-review-agent
+version: 1.0.0
+description: An AI agent that reviews code and suggests improvements
+model:
+  preferred: "anthropic:claude-sonnet-4-5"
+tools:
+  - read
+  - write
+triggers:
+  - on: push
+    action: review
